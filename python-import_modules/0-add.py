@@ -9,5 +9,5 @@ b = 2
 result = add(a, b)
 
 print("{} + {} = {}".format(a, b, result))
-if __name__ == "__main__":
-    pass
+if add.__name__ != 'add':
+    print("Warning: The add function is not the correct function from add_0.py")
