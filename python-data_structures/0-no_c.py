@@ -1,3 +1,5 @@
+
+
 def no_c(my_string):
     result = []
     for char in my_string:
