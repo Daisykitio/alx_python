@@ -5,5 +5,5 @@ def no_c(my_string):
     for char in my_string:
         if char not in ['c', 'C']:
             result.append(char)
-    return ''.join(result)
-
+new_string = ''.join(result)
+    return new_string
