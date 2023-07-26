@@ -1,4 +1,3 @@
-# File: 2-multiple_returns.py
 
 def multiple_returns(sentence):
     # Check if the sentence is empty
