@@ -1,3 +1,16 @@
+"""
+Module 0-square
+==============
+
+This module defines the Square class that represents a square with a private
+attribute "size". The size attribute is essential for a square as it is used in
+computing the area and other operations. Keeping it private ensures proper
+control over its value and type.
+
+Example:
+    # Create a square with size 5
+    square = Square(5)
+"""
 class Square:
     def __init__(self, size):
         self.__size = size
