@@ -1,6 +1,6 @@
 
 """
-Module 0-square
+Module 2-square
 ==============
 
 This module defines the Square class that represents a square with a private
