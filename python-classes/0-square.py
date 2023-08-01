@@ -12,6 +12,12 @@ Example:
     square = Square(5)
 """
 class Square:
+    """
+    This class represents a square with a private attribute "size".
+
+    Attributes:
+        __size (int): The size of the square.
+    """
     def __init__(self, size):
         self.__size = size
 
