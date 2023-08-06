@@ -1,13 +1,18 @@
+"""This module contains the definition of the Base class, which is the base of all other classes in this project."""
+
 class Base:
-    # Private class attribute to keep track of objects created
+    """The Base class is used as the base for all other classes in this project."""
+
     __nb_objects = 0
 
     def __init__(self, id=None):
-        # If id is provided, assign it to the public instance attribute id
+        """Constructor for the Base class.
+
+        If `id` is provided, assign it to the public instance attribute `id`.
+        Otherwise, increment `__nb_objects` and assign the new value to the public instance attribute `id`.
+        """
         if id is not None:
             self.id = id
         else:
-            # Increment __nb_objects and assign the new value to id
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
-
