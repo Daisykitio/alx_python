@@ -1,11 +1,20 @@
-"""
+"""models/rectangle.py
+
 This module contains the definition of the Rectangle class, which inherits from the Base class.
 """
 
 from models.base import Base
 
 class Rectangle(Base):
-    """The Rectangle class is used as the base for all other classes in this project.""":
+    """The Rectangle class represents a rectangle.
+
+    Attributes:
+        width (int): The width of the rectangle.
+        height (int): The height of the rectangle.
+        x (int, optional): The x-coordinate of the rectangle's position. Defaults to 0.
+        y (int, optional): The y-coordinate of the rectangle's position. Defaults to 0.
+        id (int, optional): The ID of the rectangle. Defaults to None.
+    """
     def __init__(self, width, height, x=0, y=0, id=None):
         """Constructor for the Rectangle class.
 
