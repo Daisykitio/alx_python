@@ -5,6 +5,7 @@ This module contains the definition of the Rectangle class, which inherits from 
 from models.base import Base
 
 class Rectangle(Base):
+    """The Rectangle class is used as the base for all other classes in this project.""":
     def __init__(self, width, height, x=0, y=0, id=None):
         """Constructor for the Rectangle class.
 
