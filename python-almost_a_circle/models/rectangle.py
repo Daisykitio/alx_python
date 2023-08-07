@@ -1,10 +1,15 @@
-"""This module contains the definition of the Rectangle class, which inherits from the Base class.
 """
+models.rectangle
+================
+
+This module contains the definition of the Rectangle class, which inherits from the Base class.
+"""
+
 from models.base import Base
 
 class Rectangle(Base):
+    """The Rectangle class represents a rectangle."""
 
-     """The Rectangle class represents a rectangle."""
     def __init__(self, width, height, x=0, y=0, id=None):
         """Constructor for the Rectangle class.
 
