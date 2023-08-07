@@ -1,3 +1,8 @@
+"""
+Module: models.square
+Class: Square
+"""
+
 from models.rectangle import Rectangle
 
 class Square(Rectangle):
