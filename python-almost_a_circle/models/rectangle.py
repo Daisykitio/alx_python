@@ -4,6 +4,7 @@ from models.base import Base
 
 class Rectangle(Base):
 
+     """The Rectangle class represents a rectangle."""
     def __init__(self, width, height, x=0, y=0, id=None):
         """Constructor for the Rectangle class.
 
