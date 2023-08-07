@@ -4,7 +4,7 @@ This module contains the definition of the Rectangle class, which inherits from 
 from models.base import Base
 
 class Rectangle(Base):
-     """The Rectangle class represents a rectangle.
+`"""The Rectangle class represents a rectangle.
 
 """
 
