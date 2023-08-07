@@ -1,20 +1,9 @@
-"""models/rectangle.py
 
-This module contains the definition of the Rectangle class, which inherits from the Base class.
-"""
-
-from models.base import Base
+    from models.base import Base
 
 class Rectangle(Base):
-    """The Rectangle class represents a rectangle.
+    """The Rectangle class represents a rectangle."""
 
-    Attributes:
-        width (int): The width of the rectangle.
-        height (int): The height of the rectangle.
-        x (int, optional): The x-coordinate of the rectangle's position. Defaults to 0.
-        y (int, optional): The y-coordinate of the rectangle's position. Defaults to 0.
-        id (int, optional): The ID of the rectangle. Defaults to None.
-    """
     def __init__(self, width, height, x=0, y=0, id=None):
         """Constructor for the Rectangle class.
 
@@ -42,7 +31,7 @@ class Rectangle(Base):
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value <= 0:
-            raise ValueError("width must be greater than 0")
+            raise ValueError("width must be > 0")
         self.__width = value
 
     @property
@@ -56,7 +45,7 @@ class Rectangle(Base):
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value <= 0:
-            raise ValueError("height must be greater than 0")
+            raise ValueError("height must be > 0")
         self.__height = value
 
     @property
@@ -69,6 +58,8 @@ class Rectangle(Base):
         """Setter for the x attribute."""
         if not isinstance(value, int):
             raise TypeError("x must be an integer")
+        if value < 0:
+            raise ValueError("x must be >= 0")
         self.__x = value
 
     @property
@@ -81,5 +72,7 @@ class Rectangle(Base):
         """Setter for the y attribute."""
         if not isinstance(value, int):
             raise TypeError("y must be an integer")
+        if value < 0:
+            raise ValueError("y must be >= 0")
         self.__y = value
 
