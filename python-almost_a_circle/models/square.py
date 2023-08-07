@@ -41,4 +41,6 @@ class Square(Rectangle):
         """Setter for the size attribute (same as width and height)."""
         self.width = value
         self.height = value
-
+    def __str__(self):
+        """Override the __str__ method to provide a custom string representation."""
+        return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y, self.width)
