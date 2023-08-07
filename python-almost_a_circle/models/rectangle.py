@@ -79,9 +79,9 @@ class Rectangle(Base):
             raise TypeError("y must be an integer")
         if value < 0:
             raise ValueError("y must be >= 0")
-        self.__y = value
+        self.__y
 
-    def area(self):
+         def area(self):
         """Calculate and return the area of the rectangle."""
         return self.width * self.height
 
@@ -97,10 +97,12 @@ class Rectangle(Base):
         return "[Rectangle] ({}) {}/{} - {}/{}".format(
             self.id, self.x, self.y, self.width, self.height)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """Update attributes with the provided arguments."""
         if args:
             attributes = ['id', 'width', 'height', 'x', 'y']
             for i, arg in enumerate(args):
                 setattr(self, attributes[i], arg)
-
+        elif kwargs:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
