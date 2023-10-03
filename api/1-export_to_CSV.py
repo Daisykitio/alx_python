@@ -1,5 +1,5 @@
-import csv
 import requests
+import csv
 import sys
 
 def fetch_employee_data(employee_id):
