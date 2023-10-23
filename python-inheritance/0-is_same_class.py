@@ -9,4 +9,3 @@ def is_same_class(obj, a_class):
         - a_class: class to check
     """
     return type(obj) is a_class
-
